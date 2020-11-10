@@ -8,3 +8,9 @@ const muteButton = document.getElementById('muteButton');
 const player = new MediaPlayer({ el: video, plugins: [new AutoPlay(),new AutoPause()] });
 playButton.onclick = () => player.isPaused()? player.play(): player.pause()
 muteButton.onclick = () => player.media.muted ? player.unmute() : player.mute()
+
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/sw.js').catch(error => {
+        console.error(error.message)
+    })
+}
