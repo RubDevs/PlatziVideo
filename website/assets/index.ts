@@ -1,7 +1,7 @@
-import MediaPlayer from './MediaPlayer'
-import AutoPlay from './plugins/AutoPlay'
-import AutoPause from './plugins/AutoPause'
-import AdsPlugin from './plugins/Ads/index'
+import MediaPlayer from '@rubdevs/mediaplayer'
+import AutoPlay from '@rubdevs/mediaplayer/lib/plugins/AutoPlay'
+import AutoPause from '@rubdevs/mediaplayer/lib/plugins/AutoPause'
+import AdsPlugin from '@rubdevs/mediaplayer/lib/plugins/Ads/index'
 
 const video = document.querySelector('video');
 const playButton: HTMLElement = document.getElementById('playButton')
